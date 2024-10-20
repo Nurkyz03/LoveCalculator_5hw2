@@ -8,11 +8,19 @@ import com.geeks.retrofit_5hw2.LoveModel
 
 interface LoveApiService {
 
+    // CRUD запрос
+    // C - create - post
+    // R - read - get
+    // U - update - put, post
+    // D - delete - delete
+    // Https://online.geeks.kg - base url, уник адрес сайта
+    // Https://online.geeks.kg/lesson - endpoint/ method
+
     @GET("getPercentage")
     fun fetchPercentage(
-        @Header("X-Rapidapi-Key") key: String,
-        @Header("X-Rapidapi-Host") host: String,
         @Query("fname") firstName: String,
-        @Query("sname") secondName: String
-    ): Call<LoveModel>
+        @Query("sname") secondName: String,
+        @Header("x-Rapidapi-Key") key: String,
+        @Header("x-Rapidapi-Host") host: String
+    ) : retrofit2.Call<LoveModel>
 }
