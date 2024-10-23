@@ -1,7 +1,7 @@
 package com.geeks.retrofit_5hw2.ui.presenters
 
 import com.geeks.retrofit_5hw2.LoveModel
-import com.geeks.retrofit_5hw2.RetrofitService
+import com.geeks.retrofit_5hw2.`object`.RetrofitService
 import com.geeks.retrofit_5hw2.interfaces.LoveCalcContract
 import retrofit2.Call
 import retrofit2.Callback
