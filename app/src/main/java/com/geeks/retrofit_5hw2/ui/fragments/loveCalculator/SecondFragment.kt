@@ -1,4 +1,4 @@
-package com.geeks.retrofit_5hw2.ui.fragments
+package com.geeks.retrofit_5hw2.ui.fragments.loveCalculator
 
 import android.os.Bundle
 import android.util.Log
